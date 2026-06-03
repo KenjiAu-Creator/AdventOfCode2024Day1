@@ -5,12 +5,12 @@ Pair up the smallest number in the left list with the smallest number in the rig
 
 For example two lists can be:
 
-3   4
-4   3
-2   5
-1   3
-3   9
-3   3
+3   4 \n
+4   3 \n
+2   5 \n
+1   3 \n
+3   9 \n
+3   3 \n
 
 ## Design Decisions
 - Initial thoughts is that we can parse each line and push each number into a separate array based on even or odd index and then sort the arrays.
@@ -31,10 +31,10 @@ So, for these example lists, the similarity score at the end of this process is 
 ## Design Decisions
 ## Complexity
 ### Part 1
-- Time complexity: **O(n * nlogn)** since we are using the built in sort function and we must always pass through the size of list to begin with
+- Time complexity: **O(n * n * log(n))** since we are using the built in sort function and we must always pass through the size of list to begin with
 
 ### Part 2
-- Time complexity: **O(n))** since we are no longer sorting the arrays and we only need to pass through the list twice - once to create our array and build a frequency map and then a second time to iterate through out list.
+- Time complexity: **O(n)** since we are no longer sorting the arrays and we only need to pass through the list twice - once to create our array and build a frequency map and then a second time to iterate through out list.
 
 ## Lessons learned
 
